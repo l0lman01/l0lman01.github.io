@@ -1,0 +1,29 @@
+/* Dark mode global */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .collection-item {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode nav {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .btn {
+  background-color: #e0e0e0 !important;
+  color: #121212 !important;
+}
+
+body.dark-mode .sidenav {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+body.dark-mode .sidenav a {
+  color: #e0e0e0;
+}
