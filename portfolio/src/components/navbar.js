@@ -3,16 +3,18 @@ import Sidenav from "./sidenav";
 
 function Navbar({ darkMode, toggleMode, lang, setLang, texts }) {
   useEffect(() => {
+    // Initialisation du sidenav Materialize via CDN
     const elems = document.querySelectorAll(".sidenav");
     window.M.Sidenav.init(elems);
   }, []);
 
   return (
     <>
-      {/* Navbar desktop */}
       <nav className={darkMode ? "grey darken-4" : "green"}>
         <div className="nav-wrapper container">
-          <a href="#!" className="brand-logo">Portfolio</a>
+          <a href="#!" className="brand-logo">
+            Portfolio
+          </a>
           <a href="#!" data-target="mobile-menu" className="sidenav-trigger">
             <i className="material-icons">menu</i>
           </a>
@@ -41,13 +43,13 @@ function Navbar({ darkMode, toggleMode, lang, setLang, texts }) {
           </ul>
         </div>
       </nav>
-        <Sidenav
-        lang={lang}
-        setLang={setLang}
+      <Sidenav
         darkMode={darkMode}
         toggleMode={toggleMode}
+        lang={lang}
+        setLang={setLang}
         texts={texts}
-        />
+      />
     </>
   );
 }

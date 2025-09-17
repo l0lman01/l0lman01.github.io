@@ -1,3 +1,4 @@
+// Traductions pour FR / EN
 const texts = (darkMode) => ({
   fr: {
     about: "À propos",
