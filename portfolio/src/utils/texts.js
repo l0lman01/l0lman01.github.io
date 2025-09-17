@@ -8,7 +8,7 @@ const texts = (darkMode) => ({
     description:
       "Voici un site simple avec une navbar responsive Materialize, téléchargement PDF, mode nuit/jour et multilingue.",
     download: "Télécharger mon CV",
-    email: "Email : monemail@example.com",
+    email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Mode Jour" : "Mode Nuit",
   },
   en: {
@@ -19,7 +19,7 @@ const texts = (darkMode) => ({
     description:
       "Here is a simple site with a responsive Materialize navbar, PDF download, dark/light mode, and multilingual support.",
     download: "Download my CV",
-    email: "Email: myemail@example.com",
+    email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Light Mode" : "Dark Mode",
   },
 });

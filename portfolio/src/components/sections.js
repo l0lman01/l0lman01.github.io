@@ -1,12 +1,14 @@
 import React from "react";
 
-function Sections({ texts }) {
+function Sections({ texts, lang }) {
+  // Choose the correct PDF based on language
+  const pdfUrl = lang === "fr" ? "/pdfs/Léo PHAM-VU FR.pdf" : "/pdfs/Léo PHAM-VU EN.pdf";
   return (
     <div className="container" style={{ padding: "2rem" }}>
       <section id="about">
         <h4>{texts.welcome}</h4>
         <p>{texts.description}</p>
-        <a className="btn waves-effect waves-light" href="/monCV.pdf" download>
+        <a className="btn waves-effect waves-light" href={pdfUrl} download>
           {texts.download}
         </a>
       </section>
@@ -22,7 +24,9 @@ function Sections({ texts }) {
 
       <section id="contact" style={{ marginTop: "3rem" }}>
         <h5>{texts.contact}</h5>
-        <p>{texts.email}</p>
+        <p>
+          <a href={`mailto:${texts.email.replace(/.*: /, "")}`}>{texts.email}</a>
+        </p>
       </section>
     </div>
   );

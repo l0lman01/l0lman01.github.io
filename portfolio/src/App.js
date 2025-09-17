@@ -23,7 +23,7 @@ function App() {
         setLang={setLang}
         texts={texts(darkMode)[lang]}
       />
-      <Sections texts={texts(darkMode)[lang]} />
+  <Sections texts={texts(darkMode)[lang]} lang={lang} />
     </>
   );
 }
