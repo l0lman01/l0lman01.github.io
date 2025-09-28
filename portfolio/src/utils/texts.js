@@ -4,9 +4,8 @@ const texts = (darkMode) => ({
     about: "À propos",
     projects: "Projets",
     contact: "Contact",
-    welcome: "Bienvenue sur mon portfolio",
     description:
-      "Voici un site simple avec une navbar responsive Materialize, téléchargement PDF, mode nuit/jour et multilingue.",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     download: "Télécharger mon CV",
     email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Mode Jour" : "Mode Nuit",
@@ -15,10 +14,9 @@ const texts = (darkMode) => ({
     about: "About",
     projects: "Projects",
     contact: "Contact",
-    welcome: "Welcome to my portfolio",
     description:
-      "Here is a simple site with a responsive Materialize navbar, PDF download, dark/light mode, and multilingual support.",
-    download: "Download my CV",
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    download: "Download my resume",
     email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Light Mode" : "Dark Mode",
   },

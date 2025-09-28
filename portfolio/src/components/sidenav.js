@@ -24,9 +24,19 @@ function Sidenav({ lang, setLang, darkMode, toggleMode, texts }) {
           <button
             className="btn blue"
             onClick={() => setLang(lang === "fr" ? "en" : "fr")}
-            style={{ width: "100%" }}
+            style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
           >
-            {lang === "fr" ? "EN" : "FR"}
+            {lang === "fr" ? (
+              <>
+                <img src="/flags/en.png" alt="English" style={{ width: 20, height: 20, borderRadius: 2 }} />
+                EN
+              </>
+            ) : (
+              <>
+                <img src="/flags/fr.png" alt="Français" style={{ width: 20, height: 20, borderRadius: 2 }} />
+                FR
+              </>
+            )}
           </button>
         </div>
       </li>

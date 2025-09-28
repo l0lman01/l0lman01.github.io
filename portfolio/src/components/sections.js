@@ -1,12 +1,27 @@
 import React from "react";
+import photo from '../assets/me.jpg';
 
 function Sections({ texts, lang }) {
+
   // Choose the correct PDF based on language
   const pdfUrl = lang === "fr" ? "/pdfs/Léo PHAM-VU FR.pdf" : "/pdfs/Léo PHAM-VU EN.pdf";
   return (
     <div className="container" style={{ padding: "2rem" }}>
-      <section id="about">
+      <section id="about" className="center-align">
         <h4>{texts.welcome}</h4>
+        <img
+          src={photo}
+          className="responsive-img z-depth-3"
+          style={{
+            width: "200px",
+            height: "200px",
+            objectFit: "cover",
+            borderRadius: "20px",
+            margin: "20px auto",
+            display: "block"
+          }}
+          alt="Profile"
+        />
         <p>{texts.description}</p>
         <a className="btn waves-effect waves-light" href={pdfUrl} download>
           {texts.download}
