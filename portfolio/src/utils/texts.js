@@ -1,21 +1,27 @@
-// Traductions pour FR / EN
 const texts = (darkMode) => ({
   fr: {
     about: "À propos",
     projects: "Projets",
+    experience: "Expériences",
     contact: "Contact",
+    welcome: "Salut, je suis Léo PHAM VU et je suis",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Bonjour! Je suis Léo, un développeur de jeux passionné et QA testeur. Ravi de vous rencontrer!",
+    roles: ["Développeur jeu vidéo", "QA Testeur"],
     download: "Télécharger mon CV",
     email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Mode Jour" : "Mode Nuit",
   },
+  
   en: {
     about: "About",
     projects: "Projects",
+    experience: "Experiences",
     contact: "Contact",
+    welcome: "Hi, I'm Léo, I'm a",
     description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Hello! I'm Léo PHAM VU, a passionate Game Developer and QA Tester.",
+    roles: ["Game Developer", "QA Tester"],
     download: "Download my resume",
     email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Light Mode" : "Dark Mode",
