@@ -1,3 +1,39 @@
+/* Portal theme for react-responsive-carousel arrows */
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  filter: none;
+  background: transparent !important;
+  color: #222 !important;
+  border-radius: 50%;
+  box-shadow: none;
+  font-size: 2.2rem;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+.carousel .control-arrow.control-prev, .carousel.carousel-slider .control-arrow.control-prev {
+  color: #00aaff !important;
+  text-shadow: 0 0 8px #00aaff99, 0 0 16px #00aaff44;
+}
+.carousel .control-arrow.control-next, .carousel.carousel-slider .control-arrow.control-next {
+  color: #ff8800 !important;
+  text-shadow: 0 0 8px #ff880099, 0 0 16px #ff880044;
+}
+.carousel .control-arrow:hover, .carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0,0,0,0.15) !important;
+  color: #fff !important;
+  text-shadow: 0 0 12px #fff, 0 0 24px #fff;
+}
+/* Make react-responsive-carousel arrows more visible in light mode */
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  filter: none;
+  background: rgba(0,0,0,0.15) !important;
+  color: #222 !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.2s;
+}
+.carousel .control-arrow:hover, .carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0,0,0,0.35) !important;
+  color: #fff !important;
+}
 /* Dark mode global */
 body.dark-mode {
   background-color: #121212;
