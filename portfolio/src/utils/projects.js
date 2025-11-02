@@ -17,12 +17,11 @@ const projects = [
       fr: "Jeu Phaser",
     },
     description: {
-      en: "A fun 2D game built with Phaser.js and integrated into React.",
-      fr: "Un jeu 2D amusant créé avec Phaser.js et intégré dans React.",
+      en: "A fun 2D game built with Phaser.js",
+      fr: "Un jeu 2D amusant créé avec Phaser.js",
     },
     image: require("../assets/github.png"),
-    /* TODO do a router link to /phaser */
-    demo: "",
+    demo: "https://asteroidjoyride.netlify.app/",
   },
   {
     title: {
