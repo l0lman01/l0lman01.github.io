@@ -116,12 +116,12 @@ function Sections({ texts, lang, darkMode }) {
             {projects.map((project, index) => (
               <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: 350 }}>
                 <div
-                  className={`card ${darkMode ? "grey darken-3 white-text" : "white"}`}
+                  className={`card ${darkMode ? "blue-grey darken-4 white-text z-depth-3" : "white"}`}
                   style={{
                     width: "100%",
                     maxWidth: 400,
-                    backgroundColor: darkMode ? "rgba(40,40,40,0.9)" : "white",
-                    boxShadow: darkMode ? "0 4px 15px rgba(0, 0, 0, 0.6)" : "0 4px 10px rgba(0,0,0,0.2)",
+                    backgroundColor: darkMode ? "rgba(16, 24, 38, 0.97)" : "white",
+                    boxShadow: darkMode ? "0 8px 30px rgba(0, 140, 255, 0.25)" : "0 4px 10px rgba(0,0,0,0.2)",
                     borderRadius: "12px",
                     marginLeft: "auto",
                     marginRight: "auto"
@@ -142,7 +142,7 @@ function Sections({ texts, lang, darkMode }) {
                       }}
                     />
                   </div>
-                  <div className="card-content">
+                  <div className="card-content black-text">
                     <span className="card-title">{project.title[lang]}</span>
                     <p>{project.description[lang]}</p>
                   </div>
@@ -227,12 +227,12 @@ function Sections({ texts, lang, darkMode }) {
         >
           {games.map((game, index) => (
             <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: 350 }}>
-              <div className={`card ${darkMode ? "grey darken-3 white-text" : "white"}`}
+              <div className={`card ${darkMode ? "blue-grey darken-4 white-text z-depth-3" : "white"}`}
                 style={{
                   width: "100%",
                   maxWidth: 400,
-                  backgroundColor: darkMode ? "rgba(40,40,40,0.9)" : "white",
-                  boxShadow: darkMode ? "0 4px 15px rgba(0, 0, 0, 0.6)" : "0 4px 10px rgba(0,0,0,0.2)",
+                  backgroundColor: darkMode ? "rgba(16, 24, 38, 0.97)" : "white",
+                  boxShadow: darkMode ? "0 8px 30px rgba(0, 140, 255, 0.25)" : "0 4px 10px rgba(0,0,0,0.2)",
                   borderRadius: "12px",
                   marginLeft: "auto",
                   marginRight: "auto"
@@ -253,7 +253,7 @@ function Sections({ texts, lang, darkMode }) {
                     }}
                   />
                 </div>
-                <div className="card-content">
+                <div className="card-content black-text">
                   <span className="card-title">{game.title}</span>
                   <p>{game.description[lang]}</p>
                 </div>
