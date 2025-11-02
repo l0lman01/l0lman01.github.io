@@ -1,4 +1,4 @@
-/* Portal theme for react-responsive-carousel arrows */
+
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
   filter: none;
   background: transparent !important;
@@ -21,7 +21,7 @@
   color: #fff !important;
   text-shadow: 0 0 12px #fff, 0 0 24px #fff;
 }
-/* Make react-responsive-carousel arrows more visible in light mode */
+
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
   filter: none;
   background: rgba(0,0,0,0.15) !important;
@@ -34,7 +34,20 @@
   background: rgba(0,0,0,0.35) !important;
   color: #fff !important;
 }
-/* Dark mode global */
+
+.carousel .slide > div{
+  height: auto !important;
+}
+
+.carousel .slider-wrapper,
+.carousel .slider,
+.carousel .slide {
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
+}
+
+
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;

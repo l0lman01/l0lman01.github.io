@@ -1,7 +1,10 @@
+import games from "./games";
+
 const texts = (darkMode) => ({
   fr: {
     about: "À propos",
     projects: "Projets",
+    games: "Jeux Publiés",
     experience: "Expériences",
     contact: "Contact",
     welcome: "Salut, je suis Léo PHAM VU et je suis",
@@ -16,6 +19,7 @@ const texts = (darkMode) => ({
   en: {
     about: "About",
     projects: "Projects",
+    games: "Games Shipped",
     experience: "Experiences",
     contact: "Contact",
     welcome: "Hi, I'm Léo, I'm a",

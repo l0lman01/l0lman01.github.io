@@ -6,6 +6,7 @@ import portalBlue from "../assets/portal blue.png";
 import portalOrange from "../assets/portal orange.png";
 import { Typewriter } from "react-simple-typewriter";
 import projects from "../utils/projects";
+import games from "../utils/games";
 
 function Sections({ texts, lang, darkMode }) {
   return (
@@ -150,7 +151,7 @@ function Sections({ texts, lang, darkMode }) {
                       href={project.demo}
                       target="_blank"
                       rel="noreferrer"
-                      className={darkMode ? "blue-text text-lighten-2" : ""}
+                      className={darkMode ? "blue-text text-lighten-2" : "blue-text"}
                     >
                       Demo
                     </a>
@@ -159,6 +160,110 @@ function Sections({ texts, lang, darkMode }) {
               </div>
             ))}
           </Carousel>
+      </section>
+
+      <section id="games" style={{ marginBottom: "4rem" }}>
+        <h4 className="center-align">{texts.games}</h4>
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          infiniteLoop
+          autoPlay
+          interval={3500}
+          emulateTouch
+          swipeable
+          dynamicHeight={true}
+          showIndicators={false}
+          renderArrowPrev={(onClickHandler, hasPrev, label) =>
+            hasPrev && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                style={{
+                  position: "absolute",
+                  zIndex: 2,
+                  top: "calc(50% - 180px)",
+                  left: 15,
+                  width: 64,
+                  height: 360,
+                  background: "none",
+                  border: "none",
+                  outline: "none",
+                  cursor: "pointer",
+                  borderRadius: "50% / 40%"
+                }}
+                aria-label="Previous slide"
+              >
+                <img src={portalBlue} alt="Prev" style={{ width: 70, height: 360, transform: "rotate(180deg)" }} />
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext, label) =>
+            hasNext && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                style={{
+                  position: "absolute",
+                  zIndex: 2,
+                  top: "calc(50% - 180px)",
+                  right: 15,
+                  width: 64,
+                  height: 360,
+                  background: "none",
+                  border: "none",
+                  outline: "none",
+                  cursor: "pointer",
+                  borderRadius: "50% / 40%"
+                }}
+                aria-label="Next slide"
+              >
+                <img src={portalOrange} alt="Next" style={{ width: 70, height: 360 }} />
+              </button>
+            )
+          }
+        >
+          {games.map((game, index) => (
+            <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "auto" }}>
+              <div className={`card ${darkMode ? "grey darken-3 white-text" : "white"}`}
+                style={{
+                  width: "100%",
+                  maxWidth: 500,
+                  backgroundColor: darkMode ? "rgba(40,40,40,0.9)" : "white",
+                  boxShadow: darkMode ? "0 4px 15px rgba(0, 0, 0, 0.6)" : "0 4px 10px rgba(0,0,0,0.2)",
+                  borderRadius: "12px",
+                  marginLeft: "auto",
+                  marginRight: "auto"
+                }}>
+ 
+                <div className="card-image">
+                  <img
+                    src={game.image}
+                    alt={game.title}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      maxHeight: 250,
+                      objectFit: "cover",
+                      filter: darkMode ? "brightness(0.85)" : "none",
+                      borderTopLeftRadius: "12px",
+                      borderTopRightRadius: "12px"
+                    }}
+                  />
+                </div>
+                <div className="card-content">
+                  <span className="card-title">{game.title}</span>
+                  <p>{game.description[lang]}</p>
+                </div>
+                <div className="card-action">
+                  <span className={darkMode ? "blue-text text-lighten-2" : ""}>Released: {game.released}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Carousel>
       </section>
 
       <section id="contact" className="center-align">
