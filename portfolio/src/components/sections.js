@@ -172,7 +172,7 @@ function Sections({ texts, lang, darkMode }) {
           interval={3500}
           emulateTouch
           swipeable
-          dynamicHeight={true}
+          dynamicHeight={false}
           showIndicators={false}
           renderArrowPrev={(onClickHandler, hasPrev, label) =>
             hasPrev && (
@@ -226,11 +226,11 @@ function Sections({ texts, lang, darkMode }) {
           }
         >
           {games.map((game, index) => (
-            <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "auto" }}>
+            <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: 350 }}>
               <div className={`card ${darkMode ? "grey darken-3 white-text" : "white"}`}
                 style={{
                   width: "100%",
-                  maxWidth: 500,
+                  maxWidth: 400,
                   backgroundColor: darkMode ? "rgba(40,40,40,0.9)" : "white",
                   boxShadow: darkMode ? "0 4px 15px rgba(0, 0, 0, 0.6)" : "0 4px 10px rgba(0,0,0,0.2)",
                   borderRadius: "12px",
@@ -258,7 +258,15 @@ function Sections({ texts, lang, darkMode }) {
                   <p>{game.description[lang]}</p>
                 </div>
                 <div className="card-action">
-                  <span className={darkMode ? "blue-text text-lighten-2" : ""}>Released: {game.released}</span>
+                  <span className={darkMode ? "blue-text text-lighten-2" : ""}>
+                  <a
+                      href={game.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Game Page
+                    </a>
+                  </span>
                 </div>
               </div>
             </div>

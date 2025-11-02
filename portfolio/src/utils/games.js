@@ -7,7 +7,6 @@ const games = [
     },
     image: require("../assets/smurfs.jpg"),
     demo: "https://store.steampowered.com/app/2800630/The_Smurfs__Village_Party/",
-    released: "2024"
   },
   {
     title: "Totally Spies!: Cyber Mission",
@@ -17,7 +16,6 @@ const games = [
     },
     image: require("../assets/spies.jpg"),
     demo: "https://store.steampowered.com/app/2793950/Totally_Spies__Cyber_Mission/",
-    released: "2024"
   },
   {
     title: "Astérix & Obélix: Mision Babylon",
@@ -27,7 +25,6 @@ const games = [
     },
     image: require("../assets/asterix.jpg"),
     demo: "https://store.steampowered.com/app/3489240/Asterix__Obelix__Mission_Babylon/",
-    released: "2025"
   }
 ];
 

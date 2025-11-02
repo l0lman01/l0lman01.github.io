@@ -35,7 +35,7 @@
   color: #fff !important;
 }
 
-.carousel .slide > div{
+/*.carousel .slide > div{
   height: auto !important;
 }
 
@@ -45,7 +45,7 @@
   height: auto !important;
   min-height: auto !important;
   overflow: visible !important;
-}
+}*/
 
 
 body.dark-mode {
