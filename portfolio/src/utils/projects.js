@@ -10,7 +10,12 @@ const projects = [
     },
     image: require("../assets/runtill.png"),
     demo: "https://l0lman01.itch.io/run-till-dawn-p",
+    details: {
+      en: "Detailed information about Run Till Dawn game.",
+      fr: "Informations détaillées sur le jeu Run Till Dawn.",
+    },
   },
+
   {
     title: {
       en: "Phaser Game",
@@ -20,7 +25,7 @@ const projects = [
       en: "A fun 2D game built with Phaser.js",
       fr: "Un jeu 2D amusant créé avec Phaser.js",
     },
-    image: require("../assets/github.png"),
+    image: require("../assets/joyride.png"),
     demo: "https://asteroidjoyride.netlify.app/",
   },
   {
