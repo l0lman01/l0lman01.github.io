@@ -202,20 +202,6 @@ function ProjectModal({ open, project, onClose, lang, darkMode }) {
                 Demo
               </a>
             )}
-            {project.github && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className="btn waves-effect waves-light"
-                style={{
-                  backgroundColor: darkMode ? '#424242' : '#757575',
-                  textDecoration: 'none'
-                }}
-              >
-                GitHub
-              </a>
-            )}
           </div>
         </div>
       </div>

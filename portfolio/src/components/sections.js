@@ -29,7 +29,7 @@ function Sections({ texts, lang, darkMode }) {
         <section id="about" className="center-align" style={{ marginBottom: "4rem" }}>
           <h4>
             {texts.welcome} <br />
-            <span style={{ color: "blue" }}>
+            <span style={{ color: "#00a2ffff" }}>
               <Typewriter
                 words={texts.roles}
                 loop={true}

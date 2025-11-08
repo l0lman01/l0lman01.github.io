@@ -202,20 +202,6 @@ function GameModal({ open, game, onClose, lang, darkMode }) {
                 {lang === 'fr' ? 'Jouer' : 'Play Game'}
               </a>
             )}
-            {game.github && (
-              <a
-                href={game.github}
-                target="_blank"
-                rel="noreferrer"
-                className="btn waves-effect waves-light"
-                style={{
-                  backgroundColor: darkMode ? '#424242' : '#757575',
-                  textDecoration: 'none'
-                }}
-              >
-                GitHub
-              </a>
-            )}
           </div>
         </div>
       </div>
