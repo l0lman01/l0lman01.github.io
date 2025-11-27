@@ -92,7 +92,8 @@ function Sections({ texts, lang, darkMode }) {
                   border: "none",
                   outline: "none",
                   cursor: "pointer",
-                  borderRadius: "50% / 40%"
+                  borderRadius: "50% / 40%",
+                  display: window.innerWidth < 768 ? "none" : "block"
                 }}
                 aria-label="Previous slide"
               >
@@ -115,7 +116,8 @@ function Sections({ texts, lang, darkMode }) {
                   border: "none",
                   outline: "none",
                   cursor: "pointer",
-                  borderRadius: "50% / 40%"
+                  borderRadius: "50% / 40%",
+                  display: window.innerWidth < 768 ? "none" : "block"
                 }}
                 aria-label="Next slide"
               >
@@ -210,7 +212,8 @@ function Sections({ texts, lang, darkMode }) {
                   border: "none",
                   outline: "none",
                   cursor: "pointer",
-                  borderRadius: "50% / 40%"
+                  borderRadius: "50% / 40%",
+                  display: window.innerWidth < 768 ? "none" : "block"
                 }}
                 aria-label="Previous slide"
               >
@@ -233,7 +236,8 @@ function Sections({ texts, lang, darkMode }) {
                   border: "none",
                   outline: "none",
                   cursor: "pointer",
-                  borderRadius: "50% / 40%"
+                  borderRadius: "50% / 40%",
+                  display: window.innerWidth < 768 ? "none" : "block"
                 }}
                 aria-label="Next slide"
               >

@@ -241,20 +241,10 @@ function GameModal({ open, game, onClose, lang, darkMode }) {
           }}>
             {game.demo && (
               <a
-                className="btn waves-effect waves-light"
+                class="waves-effect waves-light btn orange darken-3"
                 href={game.demo}
                 target="_blank"
                 rel="noreferrer"
-                style={{
-                  marginLeft: "10px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "6px",
-                  padding: "0 12px",
-                  backgroundColor: '#FF7F00',
-                  color: '#fff'
-                }}
               >
                 {lang === 'fr' ? 'Page Steam' : 'Steam Page'}
               </a>
