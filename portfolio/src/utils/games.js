@@ -8,14 +8,19 @@ const games = [
     image: require("../assets/smurfs.jpg"),
     demo: "https://store.steampowered.com/app/2800630/The_Smurfs__Village_Party/",
     details: {
-      en: "Local multiplayer party game featuring a variety of mini-games, designed for casual play sessions.",
-      fr: "Jeu de fête multijoueur local proposant une variété de mini-jeux, conçu pour des sessions de jeu casual."
+      en: "Local multiplayer party game featuring a variety of mini-games (50 mini-games), designed for casual play sessions.",
+      fr: "Jeu de fête multijoueur local proposant une variété de mini-jeux (50 mini-jeux), conçu pour des sessions de jeu casual."
     },
     technologies: ["Unity", "C#"],
     features: {
       en: ["Local multiplayer", "Collection of mini-games", "Accessible controls"],
       fr: ["Multijoueur local", "Collection de mini-jeux", "Contrôles accessibles"]
     },
+    missions: {
+      en: ["QA testing", "Test planning and execution", "Bug tracking", "Balancing feedback", "Bug reporting", "Plateforms TRC" ],
+      fr: ["Test QA", "Planification et exécution des tests", "Suivi des bugs", "Retour sur l'équilibrage", "Rapport de bugs", "TRC des plateformes" ]
+    },
+    platforms: ["Steam", "Windows Store", "PlayStation 4", "Xbox One", "Nintendo Switch", "PlayStation 5", "Xbox Series X/S", "Nintendo Switch Lite"],
   },
   {
     title: "Totally Spies!: Cyber Mission",
@@ -34,6 +39,11 @@ const games = [
       en: ["Character switching", "Mission-based puzzles", "Colorful level design"],
       fr: ["Changement de personnage", "Puzzles basés sur des missions", "Design de niveaux coloré"]
     },
+    missions: {
+      en: ["QA testing", "Test planning and execution", "Bug tracking", "Balancing feedback", "Bug reporting", "Plateforms TRC"],
+      fr: ["Test", "Planification et exécution des tests", "Suivi des bugs", "Retour sur l'équilibrage", "Rapport de bugs", "TRC des plateformes"]
+    },
+    platforms: ["Steam", "Windows Store", "PlayStation 4", "Xbox One", "Nintendo Switch", "PlayStation 5", "Xbox Series X/S", "Nintendo Switch Lite"],
   },
   {
     title: "Astérix & Obélix: Mision Babylon",
@@ -52,6 +62,11 @@ const games = [
       en: ["2.5D platforming", "Co-op play", "Rich character animations"],
       fr: ["Plateforme 2.5D", "Jeu coopératif", "Animations de personnages riches"]
     },
+    missions: {
+      en: ["QA testing", "Test planning and execution", "Bug tracking", "Balancing feedback", "Bug reporting", "Plateforms TRC"],
+      fr: ["Test QA", "Planification et exécution des tests", "Suivi des bugs", "Retour sur l'équilibrage", "Rapport de bugs", "TRC des plateformes"]
+    },
+    platforms: ["Steam", "Windows Store", "PlayStation 4", "Xbox One", "Nintendo Switch", "PlayStation 5", "Xbox Series X/S", "Nintendo Switch Lite"],
   }
 ];
 

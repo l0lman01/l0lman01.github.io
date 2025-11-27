@@ -25,7 +25,14 @@ function Navbar({ darkMode, toggleMode, lang, setLang, texts }) {
               <button
                 className="btn white black-text"
                 onClick={toggleMode}
-                style={{ marginLeft: "10px" }}
+                style={{
+                  marginLeft: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "6px",
+                  padding: "0 12px"
+                }}
               >
                 {texts.mode}
               </button>

@@ -181,6 +181,27 @@ function ProjectModal({ open, project, onClose, lang, darkMode }) {
             </div>
           )}
 
+          {project.missions && project.missions[lang] && (
+            <div style={{ marginBottom: '20px' }}>
+              <h5 style={{ 
+                marginTop: 0, 
+                marginBottom: '10px',
+                color: darkMode ? '#64B5F6' : '#2196F3'
+              }}>
+                {lang === 'fr' ? 'Mes Missions' : 'My Missions'}
+              </h5>
+              <ul style={{ 
+                paddingLeft: '20px',
+                color: darkMode ? '#ccc' : '#666',
+                lineHeight: '1.8'
+              }}>
+                {project.missions[lang].map((mission, index) => (
+                  <li key={index}>{mission}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Action Buttons */}
           <div style={{ 
             display: 'flex', 

@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import photo from "../assets/me.jpg";
 import portalBlue from "../assets/portal blue.png";
 import portalOrange from "../assets/portal orange.png";
+import linkedinIcon from "../assets/icons/linkedin.png";
 import { Typewriter } from "react-simple-typewriter";
 import projects from "../utils/projects";
 import games from "../utils/games";
@@ -301,8 +302,44 @@ function Sections({ texts, lang, darkMode }) {
 
         <section id="contact" className="center-align">
           <h4>{texts.contact}</h4>
-          <p>Email: <a href="mailto:leo.phamvu@gmail.com">{texts.email}</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/leo-pham-vu/" target="_blank" rel="noreferrer">lien</a></p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginTop: '30px' }}>
+            <a
+              href="mailto:leo.phamvu@gmail.com"
+              title="Email"
+              style={{
+                fontSize: '48px',
+                color: darkMode ? '#0E7CC1' : '#0E7CC1',
+                transition: 'transform 0.3s ease',
+                transform: 'scale(1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              <i className="material-icons" style={{ fontSize: '48px' }}>mail</i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/leo-pham-vu/"
+              target="_blank"
+              rel="noreferrer"
+              title="LinkedIn"
+              style={{
+                transition: 'transform 0.3s ease',
+                transform: 'scale(1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              <img src={linkedinIcon} alt="LinkedIn" style={{ width: '48px', height: '48px', display: 'block' }} />
+            </a>
+          </div>
         </section>
       </div>
       

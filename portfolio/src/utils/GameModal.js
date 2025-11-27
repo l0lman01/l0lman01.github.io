@@ -181,25 +181,82 @@ function GameModal({ open, game, onClose, lang, darkMode }) {
             </div>
           )}
 
+          {game.missions && game.missions[lang] && (
+            <div style={{ marginBottom: '20px' }}>
+              <h5 style={{ 
+                marginTop: 0, 
+                marginBottom: '10px',
+                color: darkMode ? '#64B5F6' : '#2196F3'
+              }}>
+                {lang === 'fr' ? 'Mes Missions' : 'My Missions'}
+              </h5>
+              <ul style={{ 
+                paddingLeft: '20px',
+                color: darkMode ? '#ccc' : '#666',
+                lineHeight: '1.8'
+              }}>
+                {game.missions[lang].map((mission, index) => (
+                  <li key={index}>{mission}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {game.platforms && (
+            <div style={{ marginBottom: '20px' }}>
+              <h5 style={{ 
+                marginTop: 0, 
+                marginBottom: '10px',
+                color: darkMode ? '#64B5F6' : '#2196F3'
+              }}>
+                {lang === 'fr' ? 'Plateformes' : 'Platforms'}
+              </h5>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {game.platforms.map((platform, index) => (
+                  <span
+                    key={index}
+                    style={{
+                      padding: '6px 12px',
+                      backgroundColor: darkMode ? 'rgba(100, 181, 246, 0.15)' : '#f0f4ff',
+                      color: darkMode ? '#90CAF9' : '#1565C0',
+                      borderRadius: '20px',
+                      fontSize: '0.9em',
+                      fontWeight: '500',
+                      border: darkMode ? '1px solid rgba(100, 181, 246, 0.3)' : '1px solid #BBDEFB'
+                    }}
+                  >
+                    {platform}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Action Buttons */}
           <div style={{ 
             display: 'flex', 
             gap: '10px', 
             marginTop: '30px',
-            justifyContent: 'flex-end'
+            justifyContent: 'flex-end',
           }}>
             {game.demo && (
               <a
+                className="btn waves-effect waves-light"
                 href={game.demo}
                 target="_blank"
                 rel="noreferrer"
-                className="btn waves-effect waves-light"
                 style={{
-                  backgroundColor: darkMode ? '#1976d2' : '#2196F3',
-                  textDecoration: 'none'
+                  marginLeft: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "6px",
+                  padding: "0 12px",
+                  backgroundColor: '#FF7F00',
+                  color: '#fff'
                 }}
               >
-                {lang === 'fr' ? 'Jouer' : 'Play Game'}
+                {lang === 'fr' ? 'Page Steam' : 'Steam Page'}
               </a>
             )}
           </div>
