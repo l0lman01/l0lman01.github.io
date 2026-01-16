@@ -47,6 +47,24 @@
   overflow: visible !important;
 }*/
 
+/* FIX carousel cutting content */
+.carousel .slider-wrapper {
+  overflow: visible !important;
+}
+
+.carousel .slider {
+  overflow: visible !important;
+}
+
+.carousel .slide {
+  overflow: visible !important;
+}
+
+/* Prevent fixed heights */
+.carousel .slider-wrapper.axis-horizontal .slider {
+  align-items: stretch;
+}
+
 
 body.dark-mode {
   background-color: #121212;
