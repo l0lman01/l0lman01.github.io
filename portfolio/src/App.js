@@ -7,7 +7,7 @@ import { getInitialTheme, toggleDarkMode, saveTheme } from "./utils/theme";
 
 function App() {
   const [darkMode, setDarkMode] = useState(getInitialTheme());
-  const [lang, setLang] = useState("fr");
+  const [lang, setLang] = useState("en");
 
   useEffect(() => {
     toggleDarkMode(darkMode);
