@@ -64,6 +64,94 @@ function Sections({ texts, lang, darkMode }) {
           </a>
         </section>
 
+        <section id="technologies" className="center-align" style={{ marginBottom: "6rem", paddingTop: "2rem" }}>
+          <h4 style={{ marginBottom: "3rem" }}>{texts.technologies || "Technologies & Tools"}</h4>
+          <div style={{ 
+            display: "flex", 
+            justifyContent: "center", 
+            alignItems: "center", 
+            flexWrap: "wrap", 
+            gap: "40px",
+            maxWidth: "800px",
+            margin: "0 auto"
+          }}>
+            <div style={{ 
+              display: "flex", 
+              flexDirection: "column", 
+              alignItems: "center",
+              transition: "transform 0.3s ease"
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.3)"}
+            onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
+            >
+              <img 
+                src="https://cdn.worldvectorlogo.com/logos/unity-69.svg" 
+                alt="Unity" 
+                style={{ width: "80px", height: "80px", objectFit: "contain", marginBottom: "10px" }}
+              />
+            </div>
+
+            <div style={{ 
+              display: "flex", 
+              flexDirection: "column", 
+              alignItems: "center",
+              transition: "transform 0.3s ease"
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.3)"}
+            onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
+            >
+              <div style={{
+                width: "80px",
+                height: "80px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: darkMode ? "transparent" : "#0E1128",
+                borderRadius: "8px",
+                marginBottom: "10px"
+              }}>
+                <img 
+                  src="https://cdn2.unrealengine.com/ue-logo-stacked-unreal-engine-w-677x545-fac11de0943f.png" 
+                  alt="Unreal Engine 5" 
+                  style={{ width: "70px", height: "70px", objectFit: "contain" }}
+                />
+              </div>
+            </div>
+
+            <div style={{ 
+              display: "flex", 
+              flexDirection: "column", 
+              alignItems: "center",
+              transition: "transform 0.3s ease"
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.3)"}
+            onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
+            >
+              <img 
+                src="https://www.mantisbt.org/images/mantis_logo_262x90.png" 
+                alt="Mantis" 
+                style={{ width: "80px", height: "80px", objectFit: "contain", marginBottom: "10px" }}
+              />
+            </div>
+
+            <div style={{ 
+              display: "flex", 
+              flexDirection: "column", 
+              alignItems: "center",
+              transition: "transform 0.3s ease"
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.3)"}
+            onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
+            >
+              <img 
+                src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" 
+                alt="Jira" 
+                style={{ width: "80px", height: "80px", objectFit: "contain", marginBottom: "10px" }}
+              />
+            </div>
+          </div>
+        </section>
+
         <section id="games" style={{ marginBottom: "6rem", paddingTop: "2rem" }}>
           <h4 className="center-align" style={{ marginBottom: "3rem" }}>{texts.games}</h4>
           <Carousel

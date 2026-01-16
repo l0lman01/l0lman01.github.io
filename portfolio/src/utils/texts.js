@@ -1,5 +1,3 @@
-import games from "./games";
-
 const texts = (darkMode) => ({
   fr: {
     about: "À propos",
@@ -9,7 +7,7 @@ const texts = (darkMode) => ({
     contact: "Contact",
     welcome: "Salut, je suis Léo PHAM VU et je suis",
     description:
-      "Bonjour! Je suis Léo, un développeur de jeux passionné et QA testeur. Ravi de vous rencontrer!",
+      "Bonjour! Je suis Léo, un développeur de jeux  et QA testeur. Ravi de vous rencontrer!",
     roles: ["Développeur jeu vidéo", "QA Testeur"],
     download: "Télécharger mon CV",
     email: "leo.phamvu@gmail.com",
@@ -24,7 +22,7 @@ const texts = (darkMode) => ({
     contact: "Contact",
     welcome: "Hi, I'm Léo, I'm a",
     description:
-      "Hello! I'm Léo PHAM VU, a passionate Game Developer and QA Tester.",
+      "Hello! I'm Léo PHAM VU, a Game Developer and QA Tester.",
     roles: ["Game Developer", "QA Tester"],
     download: "Download my resume",
     email: "leo.phamvu@gmail.com",
