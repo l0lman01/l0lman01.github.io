@@ -23,6 +23,7 @@ const texts = (darkMode) => ({
     welcome: "Hi, I'm Léo, a",
     description:
       "Powered by caffeine and a 'break-fix' mindset. I’m a Developer/QA hybrid who views every bug report as a roadmap to a more polished product. I specialize in identifying technical friction and engineering it out of the player’s way.",
+    roles: ["Game Developer", "QA Tester"],
     download: "Download my resume",
     email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Light Mode" : "Dark Mode",
