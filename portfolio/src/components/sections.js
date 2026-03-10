@@ -26,8 +26,8 @@ function Sections({ texts, lang, darkMode }) {
 
   return (
     <>
-      <div className="container" style={{ padding: "3rem 2rem" }}>
-        <section id="about" className="center-align" style={{ marginBottom: "6rem", paddingTop: "2rem" }}>
+      <div className="container" style={{ padding: "2rem" }}>
+        <section id="about" className="center-align" style={{ marginBottom: "4rem" }}>
           <h4>
             {texts.welcome} <br />
             <span style={{ color: "#00a2ffff" }}>
@@ -54,7 +54,7 @@ function Sections({ texts, lang, darkMode }) {
               margin: "20px 0"
             }} />
 
-          <p style={{ marginBottom: "2rem", lineHeight: "1.8" }}>{texts.description}</p>
+          <p>{texts.description}</p>
           <a
             className="btn waves-effect waves-light"
             href={lang === "fr" ? "/pdfs/newCV_Léo_PHAM VU.pdf" : "/pdfs/Léo PHAM VU EN.pdf"}
@@ -258,8 +258,8 @@ function Sections({ texts, lang, darkMode }) {
                       href="#!"
                       className="modal-trigger"
                       onClick={() => {
-                        setSelectedProject(game);
-                        setOpenProjectModal(true);
+                        setSelectedGame(game);
+                        setOpenGameModal(true);
                       }}
                       style={{ marginLeft: "10px" }}
                     >
@@ -380,8 +380,8 @@ function Sections({ texts, lang, darkMode }) {
                       href="#!"
                       className="modal-trigger"
                       onClick={() => {
-                        setSelectedGame(project);
-                        setOpenGameModal(true);
+                        setSelectedProject(project);
+                        setOpenProjectModal(true);
                       }}
                       style={{ marginLeft: "10px" }}
                     >
@@ -395,8 +395,8 @@ function Sections({ texts, lang, darkMode }) {
 
         </section>
 
-        <section id="contact" className="center-align" style={{ paddingTop: "2rem", paddingBottom: "3rem" }}>
-          <h4 style={{ marginBottom: "2rem" }}>{texts.contact}</h4>
+        <section id="contact" className="center-align">
+          <h4>{texts.contact}</h4>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginTop: '30px' }}>
             <a
               href="mailto:leo.phamvu@gmail.com"
