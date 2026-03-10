@@ -5,25 +5,24 @@ const texts = (darkMode) => ({
     games: "Jeux Publiés",
     experience: "Expériences",
     contact: "Contact",
-    welcome: "Salut, je suis Léo PHAM VU et je suis",
+    welcome: "Salut, je suis Léo, un",
     description:
-      "Bonjour! Je suis Léo, un développeur de jeux  et QA testeur. Ravi de vous rencontrer!",
+      "Développeur orienté QA carburant au café, capable de transformer un rapport de crash en roadmap de stabilité. Je ne me contente pas de trouver les bugs ; je dissèque leur origine pour transformer les failles techniques en systèmes robustes. Mon objectif : garantir que la seule chose que vos joueurs brisent, ce sont des records, pas le jeu.",
     roles: ["Développeur jeu vidéo", "QA Testeur"],
     download: "Télécharger mon CV",
     email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Mode Jour" : "Mode Nuit",
   },
-  
+
   en: {
     about: "About",
     projects: "Projects",
     games: "Games Shipped",
     experience: "Experiences",
     contact: "Contact",
-    welcome: "Hi, I'm Léo, I'm a",
+    welcome: "Hi, I'm Léo, a",
     description:
-      "Hello! I'm Léo PHAM VU, a Game Developer and QA Tester.",
-    roles: ["Game Developer", "QA Tester"],
+      "Powered by caffeine and a 'break-fix' mindset. I’m a Developer/QA hybrid who views every bug report as a roadmap to a more polished product. I specialize in identifying technical friction and engineering it out of the player’s way.",
     download: "Download my resume",
     email: "leo.phamvu@gmail.com",
     mode: darkMode ? "Light Mode" : "Dark Mode",
