@@ -50,6 +50,7 @@ const projects = [
       fr: ["Apprendre la framework Phaser", "Construire les mécaniques de jeu", "Déployer sur le web", "Ajouter des effets sonores"]
     }
   },
+
   {
     title: {
       en: "Escape the manor VR",
@@ -73,8 +74,65 @@ const projects = [
     missions: {
       en: ["Design VR puzzles", "Implement hand tracking", "QA testing","Object interactions"],
       fr: ["Concevoir des puzzles VR", "Implémenter le suivi des mains", "Tests QA", "Interactions d'objets"]
-    }
+    },
   },
+
+  {
+    title: {
+      en: "NPC Generator",
+      fr: "Générateur d'PNJ",
+    },
+    description: {
+      en: "A simple project to generate random NPCs, built with Unity.",
+      fr: "Un projet simple pour générer des PNJ aléatoires, fait avec Unity.",
+    },
+    image: require("../assets/npc-gen.png"),
+    demo: "https://l0lman01.itch.io/npc-generator",
+    details: {
+      en: "NPC generation project built with Unity.",
+      fr: "Projet de génération de PNJ réalisé avec Unity."
+    },
+    technologies: ["Unity", "C#"],
+    features: {
+      en: ["Random NPC generation", "Seed-based generation"],
+      fr: ["Génération aléatoire de PNJ", "Génération basée sur des graines"]
+    },
+    missions: {
+      en: ["Design NPC behaviors", "Scriptable Objects"],
+      fr: ["Concevoir les comportements des PNJ", "Implémenter les objets scriptables"]
+    },
+  },
+
+    {
+    title: {
+      en: "The airplane of the century",
+      fr: "The airplane of the century",
+    },
+    description: {
+      en: "A bullet hell game made with Unity for a student project targeted for phone platforms.",
+      fr: "Un jeu de type bullet hell réalisé avec Unity pour un projet étudiant destiné aux plateformes mobiles.",
+    },
+    image: require("../assets/BF109E.png"),
+    video: require("../assets/Airplane Game.mp4"),
+    details: {
+      en: "Bullet hell game project built for mobile platforms with Unity.",
+      fr: "Projet de jeu de type bullet hell réalisé pour les plateformes mobiles avec Unity."
+    },
+    technologies: ["Unity", "C#", "Mobile Development", "Android APK"],
+    features: {
+      en: ["Random bullet patterns", "optimized for mobile"],
+      fr: ["Génération aléatoire de balles", "Optimisé pour mobile"]
+    },
+    missions: {
+      en: ["Design bullet hell mechanics", "Implement mobile controls", "Level design"],
+      fr: ["Concevoir les mécaniques de bullet hell", "Implémenter les contrôles mobiles", "Design de niveaux"]
+    },
+  },
+
+
+
+
+
 ];
 
 export default projects;

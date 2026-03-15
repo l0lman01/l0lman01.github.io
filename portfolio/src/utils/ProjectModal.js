@@ -96,6 +96,24 @@ function ProjectModal({ open, project, onClose, lang, darkMode }) {
             }}
           />
 
+          {project.video && (
+            <div style={{ marginBottom: '20px' }}>
+              <video
+                width="100%"
+                height="auto"
+                controls
+                style={{
+                  borderRadius: '12px',
+                  backgroundColor: '#000',
+                  maxHeight: '350px'
+                }}
+              >
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
+
           <div style={{ marginBottom: '20px' }}>
             <h5 style={{ 
               marginTop: 0, 
