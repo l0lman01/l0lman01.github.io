@@ -243,7 +243,7 @@ function ProjectModal({ open, project, onClose, lang, darkMode }) {
             )}
           </div>
         </div>
-      </div>
+      </div>run
 
       <style>{`
         @keyframes fadeIn {
