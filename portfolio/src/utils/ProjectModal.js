@@ -108,7 +108,7 @@ function ProjectModal({ open, project, onClose, lang, darkMode }) {
                   maxHeight: '350px'
                 }}
               >
-                <source src={project.video} type="video/mp4" />
+                <source src={project.video} type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             </div>
