@@ -113,7 +113,7 @@ const projects = [
       fr: "Un jeu de type bullet hell réalisé avec Unity pour un projet étudiant destiné aux plateformes mobiles.",
     },
     image: require("../assets/BF109E.png"),
-    video: require("../assets/Airplane Game.mp4"),
+    video: require("../assets/AirplaneGame.mp4"),
     details: {
       en: "Bullet hell game project built for mobile platforms with Unity.",
       fr: "Projet de jeu de type bullet hell réalisé pour les plateformes mobiles avec Unity."
