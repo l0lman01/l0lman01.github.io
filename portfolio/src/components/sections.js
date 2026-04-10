@@ -23,6 +23,7 @@ function Sections({ texts, lang, darkMode }) {
   
   const [openGameModal, setOpenGameModal] = React.useState(false);
   const [selectedGame, setSelectedGame] = React.useState(null);
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -392,51 +393,69 @@ function Sections({ texts, lang, darkMode }) {
               </div>
             ))}
           </Carousel>
-
-        </section>
-
-        <section id="contact" className="center-align">
-          <h4>{texts.contact}</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginTop: '30px' }}>
-            <a
-              href="mailto:leo.phamvu@gmail.com"
-              title="Email"
-              style={{
-                fontSize: '48px',
-                color: darkMode ? '#0E7CC1' : '#0E7CC1',
-                transition: 'transform 0.3s ease',
-                transform: 'scale(1)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.2)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <i className="material-icons" style={{ fontSize: '48px' }}>mail</i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/leo-pham-vu/"
-              target="_blank"
-              rel="noreferrer"
-              title="LinkedIn"
-              style={{
-                transition: 'transform 0.3s ease',
-                transform: 'scale(1)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.2)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <img src={linkedinIcon} alt="LinkedIn" style={{ width: '48px', height: '48px', display: 'block' }} />
-            </a>
-          </div>
         </section>
       </div>
+
+      {/* ══════════════════════════════════════
+          FOOTER
+      ══════════════════════════════════════ */}
+      <footer className="site-footer">
+        <div className="footer-glow-bar" />
+        <div className="footer-inner">
+ 
+          {/* Left — Brand */}
+          <div className="footer-brand">
+            <span className="footer-name">LÉO PHAM VU</span>
+            <span className="footer-tagline">
+              {lang === 'fr' ? 'Game Dev & QA Tester' : 'Game Dev & QA Tester'}
+            </span>
+          </div>
+ 
+          {/* Center — Copyright */}
+          <div className="footer-copy">
+            <span>{'</>'}  built with React</span>
+            © {currentYear} — All rights reserved
+          </div>
+ 
+          {/* Right — Nav + Social */}
+          <div className="footer-right">
+            <ul className="footer-links">
+              <li><a href="#about">{lang === 'fr' ? 'À propos' : 'About'}</a></li>
+              <li><a href="#games">{lang === 'fr' ? 'Jeux' : 'Games'}</a></li>
+              <li><a href="#projects">{lang === 'fr' ? 'Projets' : 'Projects'}</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div className="footer-social">
+              <a
+                href="mailto:leo.phamvu@gmail.com"
+                title="Email"
+              >
+                <i className="material-icons" style={{ fontSize: '18px' }}>mail</i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/leo-pham-vu/"
+                target="_blank"
+                rel="noreferrer"
+                title="LinkedIn"
+              >
+                <img
+                  src={linkedinIcon}
+                  alt="LinkedIn"
+                  className="footer-social-img"
+                />
+              </a>
+              <a
+                href={lang === "fr" ? "/pdfs/newCV_Léo_PHAM VU.pdf" : "/pdfs/Léo PHAM VU EN.pdf"}
+                download
+                title={lang === 'fr' ? 'Télécharger CV' : 'Download Resume'}
+              >
+                <i className="material-icons" style={{ fontSize: '18px' }}>file_download</i>
+              </a>
+            </div>
+          </div>
+ 
+        </div>
+      </footer>
       
       <ProjectModal
         open={openProjectModal}

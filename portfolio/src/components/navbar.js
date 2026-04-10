@@ -20,7 +20,6 @@ function Navbar({ darkMode, toggleMode, lang, setLang, texts }) {
           >
             <li><a href="#about">{texts.about}</a></li>
             <li><a href="#projects">{texts.projects}</a></li>
-            <li><a href="#contact">{texts.contact}</a></li>
             <li>
               <button
                 className="btn white black-text"
